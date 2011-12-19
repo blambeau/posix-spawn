@@ -84,7 +84,7 @@ See the Ruby 1.9 [`Process::spawn` documentation][ps] for details and the
 `STATUS` section below for a full account of the various `Process::spawn`
 features supported by `POSIX::Spawn::spawn`.
 
-### `system`, `popen4`, and <code>`</code>
+### Enhanced versions of `system`, `popen4`, and <code>`</code>
 
 In addition to the `spawn` method, Ruby 1.9 compatible implementations of
 `Kernel#system` and <code>Kernel#\`</code> are provided in the `POSIX::Spawn`
