@@ -24,7 +24,7 @@ class BacktickTest < Test::Unit::TestCase
 
   def test_backtick_redirect
     out = `nosuchcmd 2>&1`
-    assert_equal "/bin/sh: nosuchcmd: command not found\n", out
+    assert_match /^\/bin\/sh(.*)not found\n$/, out
     assert_equal 127, $?.exitstatus, 127
   end
 
